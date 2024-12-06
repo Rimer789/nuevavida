@@ -1,0 +1,81 @@
+.quienes-somos {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  font-family: 'Arial', sans-serif;
+}
+
+.quienes-somos h2 {
+  color: #0056b3;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.quienes-somos p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.quienes-somos strong {
+  color: #0056b3;
+}
+
+
+.imagenes {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imagenes img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .quienes-somos-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .imagenes {
+      justify-content: flex-start;
+  }
+
+  .imagenes img {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .quienes-somos {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .quienes-somos h2 {
+    font-size: 1.5rem;
+  }
+
+  .quienes-somos p {
+    font-size: 0.9rem;
+  }
+}

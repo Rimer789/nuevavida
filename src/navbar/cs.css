@@ -1,0 +1,125 @@
+/*.menu {
+  background-color: #919c979c;
+  padding: 0px;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu li {
+  margin: 0 40px; /* Ajusta el margen horizontal entre los elementos del menú 
+}
+
+.logo-container {
+  margin-right: auto; /* Mueve el logotipo a la izquierda 
+  position: relative; /* Establece la posición en relativa para que el z-index funcione 
+  z-index: 9999; /* Asegura que el logotipo esté por encima de todo 
+}
+
+.logo {
+  width: 50px; /* Ajusta el ancho del logotipo según sea necesario 
+  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho 
+}*/
+
+.menu {
+  background-color: #919c979c;
+  padding: 0px;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-despues-del-menu {
+  margin-top: 20%; 
+}
+
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: auto;
+}
+.menu li a {
+  display: block;
+  color: #ffffff; 
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  width: auto;
+}
+.menu li a:hover {
+  background-color: #9de6b3; 
+}
+
+
+.menu li:last-child {
+  border-right: none; 
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+.menu.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ajusta el valor según sea necesario */
+  transition: top 0.3s;
+}
+
+.menu li.active a {
+  background-color: #9de6b3; 
+  color: #000000; 
+}
+
+.menu li.active:hover {
+  background-color: #9de6b3; 
+  color: #000000; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .menu {
+    background-color:#198754;
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    top: 0; /* fijar en la parte superior */
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.3s; /* agregar transición para suavizar el cambio */
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}
